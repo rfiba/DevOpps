@@ -1,3 +1,3 @@
 # Za pomocą tego pliku postawimy kontener
-RUN echo 'Hello World'
+CMD [ "echo", "Hello World"]
 	
