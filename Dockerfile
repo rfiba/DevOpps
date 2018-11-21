@@ -9,4 +9,4 @@ COPY . /DevOpps
 
 CMD ["python", "HelloWorld.py"]
 	
-RUN echo 'czy to tak dziala'
+RUN docker run dockercloud/cli -h
