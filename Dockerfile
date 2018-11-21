@@ -1,6 +1,6 @@
 # Za pomocą tego pliku postawimy kontener
 FROM python:2.7-slim
-
+FROM jenkins/jenkins:lts
 # Set the working directory to /app
 WORKDIR /DevOpps
 
