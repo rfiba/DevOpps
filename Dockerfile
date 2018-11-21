@@ -9,3 +9,4 @@ COPY . /DevOpps
 
 CMD ["python", "HelloWorld.py"]
 	
+RUN echo 'czy to tak dziala'
