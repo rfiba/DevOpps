@@ -10,5 +10,5 @@ WORKDIR /DevOpps
 COPY . /DevOpps
 
 CMD ["python", "HelloWorld.py"]
-	
+CMD ["python", "Sprawdzenie.py"]	
 #RUN docker run dockercloud/cli -h
