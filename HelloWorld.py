@@ -1,1 +1,0 @@
-print("Hello World! Python in Docker Cloud")
