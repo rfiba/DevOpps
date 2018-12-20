@@ -21,4 +21,4 @@ def hello():
     return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
 
 if __name__ == "__main__":
-    app.run(host='40.121.108.248', port=1024)
+    app.run(host='0.0.0.0', port=1024) \
