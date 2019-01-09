@@ -1,0 +1,122 @@
+<<<<<<< HEAD
+import React, {Component} from 'react';
+import {Container, Row, Col} from 'reactstrap';
+
+
+const footerStyle = {
+    position: "absolute",
+    bottom: 0,
+    width: "100%",
+    background: "#343A40",
+    color: "white"
+
+};
+
+
+class Footer extends Component {
+
+    constructor() {
+        super();
+        this.state = {};
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+        const data = new FormData(event.target);
+
+
+        this.setState({
+            res: stringifyFormData(data),
+        });
+        // fetch('/api/form-submit-url', {
+        //   method: 'POST',
+        //   body: data,
+        // });
+
+
+    }
+=======
+import React, { Component } from 'react';
+
+const footerStyle = {
+
+    bottom: 0,
+    width: "100%",
+    height: "60px",
+    background: "#343A40",
+    color: "white"
+
+}
+
+class Footer extends Component {
+
+>>>>>>> origin/tomaszb_dev
+
+
+    render() {
+        return (
+<<<<<<< HEAD
+            <footer className="footer" style={footerStyle}>
+
+                {this.state.res && (
+                    <div>
+                        {alert(this.state.res)}
+                    </div>
+                )}
+                <Container>
+                    <div>
+                        <form onSubmit={this.handleSubmit}>
+                            <Row>
+                                <Col>
+                                    <h2>
+                                        Contact form
+                                    </h2>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <label htmlFor="username">Enter username</label>
+                                    <input id="username" name="username" type="text"/>
+                                </Col>
+                                <Col>
+                                    <label htmlFor="email">Enter your email</label>
+                                    <input id="email" name="email" type="email"/>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>
+                                    <label htmlFor="message">Enter message</label>
+                                    <input id="message" name="message" type="text"/>
+                                    <button>Send message</button>
+                                </Col>
+                            </Row>
+                        </form>
+                    </div>
+                </Container>
+=======
+            <footer className="footer">
+                <div class="text-center" style={footerStyle}>
+                    <p>Frontend Team 2018</p>
+                </div>
+>>>>>>> origin/tomaszb_dev
+            </footer>
+        );
+    }
+}
+
+<<<<<<< HEAD
+function
+
+stringifyFormData(fd) {
+    const data = {};
+    for (let key of fd.keys()) {
+        data[key] = fd.get(key);
+    }
+    return JSON.stringify(data, null, 2);
+}
+
+
+=======
+>>>>>>> origin/tomaszb_dev
+export default Footer;

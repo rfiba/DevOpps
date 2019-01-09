@@ -1,0 +1,26 @@
+import React, { Component } from 'react';
+<<<<<<< HEAD
+import Footer from '../footer/footer';
+=======
+
+>>>>>>> origin/tomaszb_dev
+
+class Content extends Component {
+
+  render() {
+    return (
+<<<<<<< HEAD
+
+      <main>
+          <h1>Content</h1>
+
+=======
+      <main>
+          <h1>Content</h1>
+>>>>>>> origin/tomaszb_dev
+      </main>
+    );
+  }
+}
+
+export default Content;

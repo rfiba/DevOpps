@@ -1,0 +1,18 @@
+// import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/tomaszb_dev
+
+
+<<<<<<< HEAD
+ReactDOM.render(<App />, document.getElementById('root'));
+=======
+>>>>>>> origin/tomaszb_dev
+serviceWorker.unregister();

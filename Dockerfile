@@ -1,20 +1,18 @@
-# Use an official Python runtime as a parent image
-FROM python:2.7-slim
+# base image
+FROM node:9.6.1
 
-# Set the working directory to /app
-WORKDIR /app
+# set working directory
+WORKDIR /src
+# add `/usr/src/app/node_modules/.bin` to $PATH
+#ENV PATH /usr/src/app/node_modules/.bin:$PATH
 
-# Copy the current directory contents into the container at /app
-COPY . /app
+# install and cache app dependencies
+COPY package.json ./
+RUN npm install
+RUN npm install react-scripts@1.1.1 -g
+COPY . . 
 
-# Install any needed packages specified in requirements.txt
-RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-# Make port 80 available to the world outside this container
-EXPOSE 1024
 
-# Define environment variable
-ENV NAME World
-
-# Run app.py when the container launches
-CMD ["python", "app.py"]
+# start app
+CMD ["npm", "start"]
